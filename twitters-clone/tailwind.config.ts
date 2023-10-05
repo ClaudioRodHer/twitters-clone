@@ -13,6 +13,11 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      /*se agregan los colores en tailwindcss, auqi vamos a declarar los coores que usaremos*/
+      colors:{
+        primarytwitter:"rgb(29,155,240)",
+      }
+
     },
   },
   plugins: [],
