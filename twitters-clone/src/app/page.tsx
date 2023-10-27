@@ -1,4 +1,5 @@
 import LeftSidebar from "@/components/LeftSidebar"
+import { BsDot } from "react-icons/bs"
 
 export const Home = () => {
   return (
@@ -40,9 +41,25 @@ export const Home = () => {
           {/* seccion donde se ven los tweet/post la time line */}
           <div className="flex flex-col">
             {
+              /**hace el loop para poder hacer la repeticion ede los divs */
               Array.from({length:5}).map((_,i)=>(
-                <div key={i} className="border-t-[0.5px] px-4 border-b-[0.5px]">
-                  
+                <div key={i} className="border-t-[0.5px] px-4 border-b-[0.5px] flex space-x-4">
+                  <div>
+                    <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  </div>
+
+                  <div>
+                    <div>
+                      <div>Claudio_Rod</div>
+                      <div>@claudiorod</div>
+                      <div>
+                        <BsDot/>
+                      </div>
+                      <div>1 hour</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
               ))
             }
