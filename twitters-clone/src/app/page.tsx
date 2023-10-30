@@ -20,10 +20,10 @@ export const Home = () => {
             <div className="flex flex-col w-full h-full">
               {/*caja de texto para tweet*/}
               <input type="text" name="" id="" placeholder="¡¿What's happening?!"
-              className="w-full h-full bg-transparent outline-none border-none
+                className="w-full h-full bg-transparent outline-none border-none
               border-b-[0.5px] border-gray-600 p-4
               text-2xl placeholder:text-gray-600"/>
-              
+
               {/*iconos y boton de tweetear*/}
               <div className="w-full justify-between items-center flex">
                 <div></div>
@@ -42,23 +42,37 @@ export const Home = () => {
           <div className="flex flex-col">
             {
               /**hace el loop para poder hacer la repeticion ede los divs */
-              Array.from({length:5}).map((_,i)=>(
-                <div key={i} className="border-t-[0.5px] px-4 border-b-[0.5px] flex space-x-4">
+              Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="border-t-[0.5px] px-4 border-b-[0.5px] flex space-x-4 py-4">
                   <div>
                     <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
                   </div>
 
-                  <div>
-                    <div>
+                  <div className="flex flex-col space-y-4 ">
+                    <div className="flex items-center space-x-1">
                       <div>Claudio_Rod</div>
                       <div>@claudiorod</div>
                       <div>
-                        <BsDot/>
+                        <BsDot />
                       </div>
                       <div>1 hour</div>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <div className="text-white text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, placeat! Quisquam repudiandae minus delectus fugit mollitia vero rerum maxime expedita accusantium suscipit modi veniam eos quam, ut at! Soluta, nostrum!
+                    </div>
+                    <div className="bg-slate-400 aspect-square w-full h-96 rounded-xl">
+
+                    </div>
+
+                    <div className="flex items-center space-x-2 w-full">
+                      <div>C</div>
+                      <div>R</div>
+                      <div>L</div>
+                      <div>S</div>
+                      <div>SH</div>
+                    </div>
+
+
                   </div>
                 </div>
               ))
