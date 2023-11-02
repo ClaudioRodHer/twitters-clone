@@ -1,5 +1,8 @@
 import LeftSidebar from "@/components/LeftSidebar"
-import { BsDot } from "react-icons/bs"
+import { BsChat, BsDot } from "react-icons/bs"
+import { AiOutlineHeart, AiOutlineRetweet } from "react-icons/ai"
+import { IoShareOutline, IoStatsChart } from "react-icons/io5"
+
 
 export const Home = () => {
   return (
@@ -10,7 +13,11 @@ export const Home = () => {
         {/**main section*/}
         <main className="ml-[275px]  flex w-[600px] h-full min-h-screen flex-col 
         border-l-[0.5px] border-r-[0.5px] border-gray-600">
-          <h1 className="text-xl font-bold my-4 p-6">Home</h1>
+
+          <h1 className="text-xl font-bold my-4 p-6 backdrop-blur bg-black/10 sticky top-0">
+            Home
+          </h1>
+
           {/* seccion del top para publicar tweet/post */}
           <div className="border-t-[0.5px] px-4 border-b-[0.5px] flex items-stretch py-4 space-x-2
            border-gray-600 relative">
@@ -43,33 +50,48 @@ export const Home = () => {
             {
               /**hace el loop para poder hacer la repeticion ede los divs */
               Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} className="border-t-[0.5px] px-4 border-b-[0.5px] flex space-x-4 py-4">
+                <div 
+                  key={i} 
+                  className="border-b-[0.5px] p-4 flex space-x-4 border-gray-600">
                   <div>
                     <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
                   </div>
 
-                  <div className="flex flex-col space-y-4 ">
+                  <div className="flex flex-col ">
+                    {/**usuario y hora publicacion */}
                     <div className="flex items-center space-x-1">
-                      <div>Claudio_Rod</div>
+                      <div className="font-bold">Claudio Rod</div>
                       <div>@claudiorod</div>
                       <div>
                         <BsDot />
                       </div>
                       <div>1 hour</div>
                     </div>
+                    {/**contenido tweet*/}
                     <div className="text-white text-sm">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, placeat! Quisquam repudiandae minus delectus fugit mollitia vero rerum maxime expedita accusantium suscipit modi veniam eos quam, ut at! Soluta, nostrum!
                     </div>
-                    <div className="bg-slate-400 aspect-square w-full h-96 rounded-xl">
+                    {/**media tweet */}
+                    <div className="bg-slate-400 aspect-square w-full h-96 rounded-xl mt-2">
 
                     </div>
-
-                    <div className="flex items-center space-x-2 w-full">
-                      <div>C</div>
-                      <div>R</div>
-                      <div>L</div>
-                      <div>S</div>
-                      <div>SH</div>
+                    {/**comentar,retweet,like,share */}
+                    <div className="flex items-center justify-start space-x-20 mt-2 w-full">
+                      <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+                        <BsChat/>
+                      </div>
+                      <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+                        <AiOutlineRetweet/>
+                      </div>
+                      <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+                        <AiOutlineHeart/>
+                      </div>
+                      <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+                        <IoStatsChart/>
+                      </div>
+                      <div className="rounded-full hover:bg-white/10 transition duration-200 p-3 cursor-pointer">
+                        <IoShareOutline/>
+                      </div>
                     </div>
 
 
