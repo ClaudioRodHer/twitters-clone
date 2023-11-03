@@ -69,7 +69,9 @@ export const Home = () => {
                     </div>
                     {/**contenido tweet*/}
                     <div className="text-white text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, placeat! Quisquam repudiandae minus delectus fugit mollitia vero rerum maxime expedita accusantium suscipit modi veniam eos quam, ut at! Soluta, nostrum!
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, placeat! 
+                      Quisquam repudiandae minus delectus fugit mollitia vero rerum maxime expedita 
+                      accusantium suscipit modi veniam eos quam, ut at! Soluta, nostrum!
                     </div>
                     {/**media tweet */}
                     <div className="bg-slate-400 aspect-square w-full h-96 rounded-xl mt-2">
