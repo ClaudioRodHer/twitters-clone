@@ -13,17 +13,23 @@ export const Home = () => {
         {/**main section*/}
         <MainComponent />
         {/**right section*/}
-        <section className=" w-full  flex flex-col items-stretch h-screen px-6 ml-auto sticky top-0">
+        <section className=" w-full mt-2 flex flex-col items-stretch h-screen px-6 ml-auto sticky top-0">
 
           {/**search input*/}
           <div>
-            <div className="relative w-full h-full">
-              <label htmlFor="SearchBox" className="absolute top-0 left-0 h-full flex items-center justify-center">
-                <BsSearch className="w-5 h-5 text-gray-500"/>
+            <div className="relative w-full h-full group">
+             
+              <input placeholder="Search twitter" type="text" name="SearchBox" id="SearchBox"
+               className="outline-none peer bg-neutral-900/90  w-full h-full rounded-xl py-4 pl-14 pr-4
+               focus:border-primarytwitter border focus:border-2" />
+
+                <label htmlFor="SearchBox" 
+                className="absolute top-0 left-0 h-full flex items-center justify-center p-4
+                peer-focus:text-primarytwitter ">
+
+                <BsSearch className="w-5 h-5" />
               </label>
-              <input placeholder="Search" type="text" name="SearchBox" id="SearchBox"
-               className="outline-none bg-transparent border-none w-full h-full rounded-xl py-4 px-8" />
-            </div>
+            </div> 
           </div>
 
           {/**trending section*/}
