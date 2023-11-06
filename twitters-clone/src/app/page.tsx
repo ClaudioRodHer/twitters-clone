@@ -13,7 +13,9 @@ export const Home = () => {
         <MainComponent />
         {/**right section*/}
         <section className="fixed flex flex-col space-y-4">
-          <div></div>
+          <div>
+            <input type="text" name="Search" id="" />
+          </div>
           <div></div>
           <div></div>
         </section>
