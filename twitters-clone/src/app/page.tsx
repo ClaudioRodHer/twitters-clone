@@ -33,7 +33,21 @@ export const Home = () => {
           </div>
 
           {/**trending section*/}
-          <div></div>
+          <div className="flex flex-col rounded-xl bg-neutral-900  my-4">{/**en esta linea hace que el hover salga con margene s y redondeado*/}
+            <h3 className="font-bold text-xl my-2 px-4">What's happening</h3>
+            <div>
+              {
+                Array.from({length:5}).map((_,i)=>(/*array creado apra poder simular 5 elementos de trending*/
+                  <div 
+                  key={i} 
+                  className="hover:bg-white/10 p-4 last:rounded-b-xl transition duration-200">
+                    <div className="font-bold text-lg">#Trending  {i+1}</div>
+                    <div className="text-xs text-neutral-500">350.5k tweets</div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
 
           {/**followers section*/}
           <div></div>
