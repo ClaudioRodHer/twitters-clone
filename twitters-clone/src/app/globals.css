@@ -37,7 +37,7 @@
 
     --radius: 0.5rem;
 
-    --primarytwitter:rgb(29,155,240);
+    --primarytwitter:204 88% 53%;/* se agrega un color nuevo personalizado parausarlo despues */
   }
 
   .dark {

@@ -48,6 +48,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        primarytwitter:"hsl(var(--primarytwitter))",//se agrega color nuevo desde global
+        
       },
       borderRadius: {
         lg: `var(--radius)`,
