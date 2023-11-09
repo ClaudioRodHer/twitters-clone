@@ -47,19 +47,20 @@ const RightSection = () => {
                         Array.from({ length: 3 }).map((_, i) => (/*array creado apra poder simular 4 osibles follows*/
                             <div
                                 key={i}
-                                className="hover:bg-white/10 p-4 flex justify-between items-center 
+                                className="hover:bg-white/10 p-4 flex justify-between  items-center 
                                             last:rounded-b-xl transition duration-200"
                             >
-                                <div className="flex items-center space-x-2">
-                                    <div className="w-10 h-10 bg-neutral-600 rounded-full flex-none"></div>
+                                <div className="flex items-center space-x-4">
+                                    <div className="w-10 h-10 bg-neutral-600 rounded-full flex-none">
+                                    </div>
                                     <div className="flex flex-col">
                                         <div className="font-bold text-white ">Other user {i + 1}</div>
                                         <div className="text-gray-500 text-xs">@otheruser{i + 1}</div>
                                     </div>
                                 </div>
                                 <div className="w-full">
-                                    <button className="rounded-full  px-6 py-2 bg-white text-neutral-950
-                                                    hover:bg-neutral-300 transition duration-200" >
+                                    <button className="rounded-full  px-6 py-2 bg-white
+                                     text-neutral-950 hover:bg-neutral-300 transition duration-200" >
                                         Follow
                                     </button>
                                 </div>
@@ -71,5 +72,5 @@ const RightSection = () => {
         </section>
     )
 }
-
+ 
 export default RightSection
