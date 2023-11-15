@@ -32,4 +32,7 @@ una vez heco esto y con la carpeta UI creada entonces ya podremos instalar compo
 ej:
 https://ui.shadcn.com/docs/components/button
 
+*********IMPORTANTE*********
+todas lkas instalaciones deben ser dentro de la carpeta del proyecto
+
 */
