@@ -1,4 +1,5 @@
 # twitters-clone
+npx create-react-app my-app
 
 -- se instalaron los siguiebntos comandos para complementar el proyecto:
 
